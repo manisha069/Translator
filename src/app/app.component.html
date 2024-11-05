@@ -1,0 +1,30 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Translate</title>
+</head>
+<body> -->
+  <div class="header">
+    <div class="headerText">
+      <span class="text" > My Translate</span>
+    </div>
+    <div *ngIf = "home != true" class="headerButton">
+      <div class="mainActionButton">
+       <a class="link text" routerLink="/home" >Home</a>
+      </div>
+
+      <div *ngIf = "home != false" class="mainActionButton">
+        <a class="link text" routerLink="/translate" >Get Started</a>
+       </div>
+
+    </div>
+    
+  </div>
+   
+  <router-outlet></router-outlet>
+  
+<!--   
+</body>
+</html> -->

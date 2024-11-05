@@ -1,0 +1,20 @@
+<!-- <p>translate works!</p> -->
+<div class="mainContainer">
+    <div class="leftContainer">
+    <input type="text" class="languageFieldInput" [(ngModel)]="fromLanguage"  placeholder="Enter Text language">
+    <div class="inputTextFieldContainer">
+        <textarea type="text" class="dataField"  [(ngModel)]="fromData" placeholder="Your text here..." required></textarea>
+    </div>
+
+    </div>
+
+    <button class="mainActionButton">Translate</button>
+    
+    <div class="rightContainer">
+    <input type="text" class="languageFieldInput" [(ngModel)]="toLanguage" placeholder="Enter Translation Language">
+    <div class="inputTextFieldContainer">
+        <textarea type="text" class="dataField" [(ngModel)]="toData"></textarea>
+
+    </div>
+    </div>
+ </div>

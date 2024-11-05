@@ -1,0 +1,67 @@
+
+/* primary color #2B94F4 */
+/* text color #074970 */
+
+/* E7F5FF */
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: light;
+    color: #074970;
+}
+.header{
+    
+    background-color: #E7F5FF;
+    font-size: 20px;
+}
+
+.container_outer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link{
+
+font-style: normal;
+text-decoration: none;
+color: white;
+}
+
+.rightContainer{
+
+    height: 459px;
+    width: 502px;
+    margin-top: 86px;
+}
+
+.main{
+    margin-top: 95px;
+}
+
+.secondary{
+
+    font-weight: 400;
+    margin: 5px;
+}
+
+.mainActionButton{
+    height: 50px;
+    width: 167px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2B94F4;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 4px 4px 4px #e7e7e7;
+
+}
+
+.img1{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
