@@ -6,6 +6,6 @@ export const environment = {
     XRapidAPIKeyLabel : 'X-RapidAPI-Key',
     XRapidAPIKeyValue : '6473096200mshba5276975247145p11657cjsnce0399e54819',
     AcceptEncodingLabel : 'Accept-Encoding',
-    AcceptEncodingValue : 'application/json'
-
+    AcceptEncodingValue : 'application/json',
+    translationAPI : 'http://127.0.0.1:8000/translate'
 };
