@@ -54,6 +54,9 @@ export class TranslateComponent implements OnInit{
       
     }
   }
-
+  translate(){
+    console.log("in trans button");
+    
+  }
   
 }
