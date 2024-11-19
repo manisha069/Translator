@@ -1,19 +1,37 @@
 <!-- <p>translate works!</p> -->
 <div class="mainContainer">
+    
+    
     <div class="leftContainer">
-    <input type="text" class="languageFieldInput" [(ngModel)]="sourceLanguage"  placeholder="Enter Text language">
+    <!-- <input type="text" class="languageFieldInput" [(ngModel)]="sourceLanguage"  placeholder="Enter Text language"> -->
+    <div class="drop" > 
+        <!-- (click)="setSourceLanguage()" -->
+        <!-- (ngModel)="sourceLanguage" -->
+        <select class="languageFieldInput" #source (change)="setSourceLang(source.value)" id="source"  name="languages" >
+            <option  value="default">Select Language</option>
+            <option [value] = language *ngFor="let language of Languages" >{{language}}</option>
+            
+          </select>
+    </div>
     <div class="inputTextFieldContainer">
-        <textarea type="text" class="dataField"  [(ngModel)]="sourceData" placeholder="Your text here..." required></textarea>
+        <textarea type="text" class="dataField" id="sourceData" [(ngModel)]="sourceData" placeholder="Your text here..." required></textarea>
     </div>
 
     </div>
 
-    <button class="mainActionButton" (click)="translate()">Translate</button>
+    <button class="mainActionButton" (click)="translateMethod()">Translate</button>
     
     <div class="rightContainer">
-    <input type="text" class="languageFieldInput" [(ngModel)]="targetLanguage" placeholder="Enter Translation Language">
+    <!-- <input type="text" class="languageFieldInput" [(ngModel)]="targetLanguage" placeholder="Enter Translation Language"> -->
+    <div class="drop" > 
+        <select class="languageFieldInput" #target (change)="setTargetLang(target.value)" name="languages" id="target">
+            <option value="default">Select Language</option>
+            <option [value] = language *ngFor="let language of Languages" >{{language}}</option>
+            
+          </select>
+    </div>
     <div class="inputTextFieldContainer">
-        <textarea type="text" class="dataField" [(ngModel)]="targetData"></textarea>
+        <textarea type="text" id="targetData" class="dataField" [(ngModel)]="targetData"></textarea>
 
     </div>
     </div>

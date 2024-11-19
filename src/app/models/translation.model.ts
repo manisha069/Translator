@@ -6,14 +6,15 @@ export interface TranslationData { //changed from Root
   }
   
   export interface Provider {
-    headers: Headers
-    from_lang: string
-    to_lang: string
-    secret_access_key: any
-    region: any
-    kwargs: Kwargs
-    email: string
-    languages: string
+    // headers: Headers
+    // from_lang: string
+    // to_lang: string
+    // secret_access_key: any
+    // region: any
+    // kwargs: Kwargs
+    // email: string
+    // languages: string
+    trans : string
   }
   
   export interface Headers {
